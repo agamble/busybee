@@ -28,7 +28,7 @@ func getRouter() http.Handler {
 	r.PathPrefix("/static/").Handler(
 		http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
 
-	f, err := os.OpenFile("./move.log", os.O_APPEND|os.O_WRONLY, 0600)
+	f, err := os.OpenFile("./bb.log", os.O_APPEND|os.O_WRONLY, 0600)
 	if err != nil {
 		panic(err)
 	}
