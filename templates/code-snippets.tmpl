@@ -1,0 +1,58 @@
+{{ define "code-snippets" }}
+<div class="lan-icons">
+    <span target-id="bash" class="lan bash active">$</span>
+    <i target-id="golang" class="lan devicon-go-plain"></i>
+    <i target-id="python" class="lan devicon-python-plain"></i>
+    <i target-id="ruby" class="lan devicon-ruby-plain"></i>
+    <i target-id="cpp" class="lan devicon-cplusplus-plain"></i>
+    <i target-id="cs" class="lan devicon-csharp-plain"></i>
+    <i target-id="java" class="lan devicon-java-plain"></i>
+    <i target-id="js" class="lan devicon-javascript-plain"></i>
+</div>
+<div class="code-snippets">
+    <code id="bash">
+        curl -H "X-msg: Everything is broken" tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e
+    </code>
+    <pre id="golang" style="display: none;">
+        <code class="go">
+package main
+
+import (
+    "net/http"
+    "net/url"
+    "time"
+)
+
+const pagingURL = "https://tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e"
+
+func page() {
+    client := &http.Client{
+        // Always set a timeout.
+        Timeout: time.Second * 10,
+    }
+    client.PostForm(pagingURL, url.Values{
+        msg: "Everything is broken!!",
+    })
+}
+        </code>
+    </pre>
+    <code id="python" style="display: none;">
+        curl -H "X-msg: Everything is broken" tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e
+    </code>
+    <code id="ruby" style="display: none;">
+        curl -H "X-msg: Everything is broken" tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e
+    </code>
+    <code id="cpp" style="display: none;">
+        curl -H "X-msg: Everything is broken" tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e
+    </code>
+    <code id="cs" style="display: none;">
+        curl -H "X-msg: Everything is broken" tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e
+    </code>
+    <code id="java" style="display: none;">
+        curl -H "X-msg: Everything is broken" tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e
+    </code>
+    <code id="js" style="display: none;">
+        curl -H "X-msg: Everything is broken" tesoro.io/page/b18eec96-8edd-4444-a05c-ce2f57005f9e
+    </code>
+</div>
+{{ end }}

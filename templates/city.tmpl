@@ -1,0 +1,18 @@
+{{ template "header" . }}
+
+<div class="city-header">
+
+</div>
+
+<div class="city-info" city-data={{ .City.JSON }}>
+
+</div>
+
+<div class="location-field">
+    <div id="city-country-val">Hello</div>
+    <input id="city-country-edit" style="display:none"/>
+    <div class="edit" edit-target="city-country">edit</div>
+</div>
+
+{{ template "footer" . }}
+

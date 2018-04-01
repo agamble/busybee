@@ -1,0 +1,27 @@
+{{ template "header" . }}
+
+<div class="top">
+        <div class="container">
+        <div class="hero">
+                <div class="first">
+                        Receive alerts when your Wordpress site is offline.
+                </div>
+                <div class="second">
+                        Integrating is as simple as adding a WordPress plugin.
+                </div>
+        </div>
+
+        <!-- look in stripe-form for pay logic stuff -->
+        <form class="cell example example1" action="/signup">
+                <fieldset>
+                        <div class="row">
+                                <label for="example1-email" data-tid="elements_examples.form.email_label">Email</label>
+                                <input id="example1-email" data-tid="elements_examples.form.email_placeholder" type="email" placeholder="janedoe@gmail.com" required="">
+                        </div>
+                </fieldset>
+                                <button type="submit">Subscribe</button>
+        </form>
+        </div>
+</div>
+
+{{ template "footer" . }}

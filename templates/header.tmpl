@@ -1,0 +1,30 @@
+{{ define "header" }}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="/static/bulma.css">
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <link rel="stylesheet" type="text/css" href="/static/ocean.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <script src="https://js.stripe.com/v3/"></script>
+    </head>
+    <body>
+
+        <div class="header">
+            <div class="container">
+                <div class="left">
+                    <div class="title">Attention</div>
+                </div>
+                <div class="right">
+                    <a href='/pricing' class="menu-item">Pricing</a>
+                    <a class="menu-item">Support</a>
+                    <a class="menu-item login-button">Login</a>
+                    <a class="buy-button menu-item">Signup</a>
+                </div>
+            </div>
+        </div>
+
+{{ end }}
+
