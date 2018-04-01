@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8081:8080
+      - 3000:3000
     environment:
       VIRTUAL_HOST: join.busybee.careers 
       LETSENCRYPT_HOST: join.busybee.careers
@@ -17,6 +17,8 @@ services:
     image: nginx
     volumes:
       - "./:/etc/nginx/conf.d/"
+    ports:
+      - 8080:8080
     environment:
       VIRTUAL_HOST: forum.busybee.careers 
       LETSENCRYPT_HOST: forum.busybee.careers
